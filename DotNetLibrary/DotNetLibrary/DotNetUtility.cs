@@ -12,6 +12,38 @@ namespace Cofdream.DotNetLibrary
     {
         public static Action<Object> Log;
 
+        public class Info
+        {
+            public Process Process;
+            public string CommandLine;
+        }
+
+        public static List<Info> GetInfo()
+        {
+            List<Info> infos = new List<Info>();
+
+            var processes = Process.GetProcesses();
+
+            foreach (var process in processes)
+            {
+                if (process.ProcessName.Contains("Unity"))
+                {
+                    var commandLine = DotNetUtility.GetCommandLineArgs(process);
+
+                    Log?.Invoke(commandLine);
+
+                    infos.Add(new Info()
+                    {
+                        Process = process,
+                        CommandLine = commandLine,
+                    });
+
+                }
+            }
+            return infos;
+        }
+
+
         /// <summary>
         /// 获取一个正在运行的进程的命令行参数。
         /// 与 <see cref="Environment.GetCommandLineArgs"/> 一样，使用此方法获取的参数是包含应用程序路径的。

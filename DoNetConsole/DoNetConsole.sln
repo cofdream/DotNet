@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoNetConsole", "DoNetConsole\DoNetConsole.csproj", "{E65C160B-3402-4701-9BC8-9366647F2E13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{B49A8E09-64C0-4698-AB76-BC0F5EA02A13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E65C160B-3402-4701-9BC8-9366647F2E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65C160B-3402-4701-9BC8-9366647F2E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65C160B-3402-4701-9BC8-9366647F2E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65C160B-3402-4701-9BC8-9366647F2E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49A8E09-64C0-4698-AB76-BC0F5EA02A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49A8E09-64C0-4698-AB76-BC0F5EA02A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49A8E09-64C0-4698-AB76-BC0F5EA02A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49A8E09-64C0-4698-AB76-BC0F5EA02A13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {232A1314-C3C2-42A0-AD73-952C1DB76A6F}
+	EndGlobalSection
+EndGlobal
